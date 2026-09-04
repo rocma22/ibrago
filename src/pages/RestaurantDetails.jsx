@@ -63,7 +63,6 @@ export default function RestaurantDetails() {
           <p className="detail-description">{t(`rest.${restaurant.key}.desc`)}</p>
           <div className="detail-actions">
             <a className="btn btn-primary" href={orderUrl} target="_blank" rel="noopener noreferrer">{t('rest.order_btn')}</a>
-            <a className="btn btn-ghost" href={mapUrl} target="_blank" rel="noopener noreferrer">{t('rest.open_map')}</a>
           </div>
         </div>
         <aside className="detail-facts">
