@@ -344,6 +344,61 @@
     .services{grid-template-columns:1fr;}
   }
 
+  /* ===== SUPERMARKET SHOPPING ===== */
+  .brands-section{padding-top:30px;}
+  .brands-shell{
+    max-width:1180px; margin:0 auto; padding:48px;
+    display:grid; grid-template-columns:minmax(0, 1fr) minmax(420px, .9fr); gap:64px; align-items:center;
+    border:1px solid var(--purple-line); border-radius:var(--radius);
+    background:linear-gradient(120deg, var(--purple-soft), rgba(247,168,27,.08));
+  }
+  .brands-copy h2{font-family:var(--ff-display); font-size:clamp(2rem, 3.8vw, 3.25rem); line-height:1.03; max-width:540px; margin:6px 0 18px;}
+  .brands-copy p{color:var(--mist); line-height:1.7; max-width:560px; margin-bottom:28px;}
+  .shopping-steps{display:grid; grid-template-columns:repeat(3, 1fr); gap:10px; max-width:580px; margin-bottom:28px;}
+  .shopping-step{position:relative; min-width:0; padding:14px 10px; border-top:1px solid var(--purple-line);}
+  .shopping-step-icon{width:34px; height:34px; display:grid; place-items:center; margin-bottom:12px; border-radius:9px; color:var(--ink); background:var(--gold);}
+  .shopping-step-icon svg{width:20px; height:20px; fill:none; stroke:currentColor; stroke-linecap:round; stroke-linejoin:round; stroke-width:1.7;}
+  .shopping-step-number{display:block; color:var(--gold-soft); font-family:var(--ff-head); font-size:.7rem; font-weight:700; letter-spacing:1px; margin-bottom:5px;}
+  .shopping-step strong{font-family:var(--ff-head); font-size:.9rem; line-height:1.25;}
+  .brands-panel{min-width:0; padding:26px; border-radius:14px; background:var(--panel-deep); color:var(--panel-text); box-shadow:0 20px 45px -28px rgba(27,11,51,.7);}
+  .brands-panel-top{display:flex; align-items:center; gap:14px; margin-bottom:10px;}
+  .brands-panel-top strong{font-family:var(--ff-head); font-size:1.08rem;}
+  .brands-step{color:var(--gold); font-family:var(--ff-head); font-weight:700; letter-spacing:1px;}
+  .brands-panel>p{color:var(--panel-text-soft); font-size:.9rem; line-height:1.5; margin-bottom:22px;}
+  .brand-list{display:grid; grid-template-columns:repeat(3, minmax(0, 1fr)); gap:12px;}
+  .brand-tile{min-width:0; min-height:104px; padding:14px; display:flex; flex-direction:column; justify-content:space-between; gap:12px; border:1px solid rgba(255,255,255,.14); border-radius:10px; background:rgba(255,255,255,.06); transition:transform .25s, border-color .25s, background .25s;}
+  .brand-tile:hover{transform:translateY(-4px); border-color:var(--gold); background:rgba(255,255,255,.11);}
+  .brand-logo-wrap{width:100%; height:40px; display:flex; align-items:center; justify-content:center; padding:5px 8px; border-radius:7px; background:#fff;}
+  .brand-logo{display:block; width:auto; max-width:100%; height:28px; object-fit:contain;}
+  .brand-marjane .brand-logo{height:32px; filter:brightness(0) saturate(100%) invert(22%) sepia(88%) saturate(2284%) hue-rotate(199deg) brightness(82%) contrast(102%);}
+  .brand-kazyon .brand-logo{height:30px;}
+  .brand-bim .brand-logo{height:31px;}
+  .brand-carrefour .brand-logo{height:31px; filter:brightness(0) saturate(100%) invert(20%) sepia(96%) saturate(3327%) hue-rotate(346deg) brightness(86%) contrast(101%);}
+  .brand-wordmark{font-family:var(--ff-head); font-size:1.05rem; font-weight:700; letter-spacing:-.4px; color:#111111;}
+  .brand-wordmark::first-letter{color:#111111;}
+  .brand-supeco .brand-logo-wrap{background:#f4d21f;}
+  .brand-liya .brand-logo-wrap{background:#f1eee7;}
+  .brand-liya .brand-wordmark{color:#b64b2c;}
+  .brand-aswak .brand-logo-wrap{background:#e9f2e8;}
+  .brand-aswak .brand-logo{height:30px;}
+  .brand-tile strong{font-family:var(--ff-head); font-size:1rem; text-align:center; white-space:nowrap; overflow:hidden; text-overflow:ellipsis;}
+  .brands-delivery-note{display:flex; align-items:center; gap:10px; margin-top:22px; color:var(--gold-soft); font-family:var(--ff-head); font-size:.85rem; font-weight:600;}
+  .delivery-arrow{font-size:1.4rem; line-height:1;}
+
+  @media (max-width:900px){
+    .brands-shell{grid-template-columns:1fr; gap:34px; padding:34px;}
+    .brand-list{grid-template-columns:repeat(2, minmax(0, 1fr));}
+  }
+  @media (max-width:520px){
+    .brands-section{padding-top:0;}
+    .brands-shell{padding:26px 20px;}
+    .brand-list{grid-template-columns:1fr;}
+    .brand-tile{min-height:78px;}
+    .shopping-steps{gap:4px;}
+    .shopping-step{padding-inline:6px;}
+    .shopping-step strong{font-size:.78rem;}
+  }
+
   /* ===== HOW IT WORKS ===== */
   .steps{
     max-width:1180px; margin:0 auto;
