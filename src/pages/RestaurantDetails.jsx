@@ -8,7 +8,7 @@ const WHATSAPP = 'https://wa.me/212722765010'
 
 export default function RestaurantDetails() {
   const { key } = useParams()
-  const { t } = useLanguage()
+  const { lang, t } = useLanguage()
   const [selectedMenuPhoto, setSelectedMenuPhoto] = useState(null)
   const restaurant = restaurants.find((item) => item.key === key)
 
@@ -60,7 +60,7 @@ export default function RestaurantDetails() {
         <div className="detail-main">
           <span className="restaurant-tag">{t(`rest.${restaurant.key}.tag`)}</span>
           <h2>{t('rest.discover')} {restaurant.name}</h2>
-          <p className="detail-description">{t(`rest.${restaurant.key}.desc`)}</p>
+          <p className="detail-description">{restaurant.desc[lang] ?? restaurant.desc.fr}</p>
           <div className="detail-actions">
             <a className="btn btn-primary" href={orderUrl} target="_blank" rel="noopener noreferrer">{t('rest.order_btn')}</a>
           </div>

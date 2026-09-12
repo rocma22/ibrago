@@ -9,7 +9,7 @@ const STAR = (
 )
 
 export default function Restaurants() {
-  const { t } = useLanguage()
+  const { lang, t } = useLanguage()
 
   return (
     <section className="section" id="restaurants">
@@ -30,8 +30,8 @@ export default function Restaurants() {
                 <h3>{r.name}</h3>
                 <span className="restaurant-rating">{STAR} {r.rating}</span>
               </div>
-              <span className="restaurant-tag">{t(`rest.${r.key}.tag`)}</span>
-              <p>{t(`rest.${r.key}.desc`)}</p>
+              <span className="restaurant-tag">{t(`${r.key}`)}</span>
+              <p>{r.desc[lang] ?? r.desc.fr}</p>
               <div className="restaurant-footer">
                 <span className="restaurant-price">
                   {r.price && (

@@ -1,8 +1,48 @@
 export const restaurants = [
+
+    // ******************** WINBITE ********************
+
+  {
+    key: "bite win",
+    name: "Bite Win",
+    desc: {
+      fr: "Burgers, sandwiches & wraps gourmands, préparés avec soin. 🍔",
+      en: "Delicious burgers, sandwiches & wraps, freshly prepared. 🍔",
+      ar: "برغر، ساندويتشات ولفائف لذيذة، محضرة بعناية. 🍔",
+    },
+    color: "#F87171",
+    icon: "burger",
+    cover: "/restaurants/winbite/cover.png",
+    gallery: [
+      "/restaurants/winbite/gallery/gallery-1.jpg",
+      "/restaurants/winbite/gallery/gallery-2.jpg",
+      "/restaurants/winbite/gallery/gallery-3.jpg",
+    ],  
+
+    menu: [
+      "/restaurants/winbite/menu/menu-1.jpg",
+      "/restaurants/winbite/menu/menu-2.jpg",
+      "/restaurants/winbite/menu/menu-3.jpg",
+    ],
+    address: "N1, Kenitra",
+    coordinates: "34.2610,-6.5803",
+    hours: "12:00 - 23:30",
+    rating: "4.2",
+    price: "50 DH",
+    order: "WINBITE",
+  },
+
+
+
   // ******************** Continental Mehdia ********************
   {
     key: "continental",
     name: "Le Continental Mehdia",
+    desc: {
+      fr: "Vue sur la lagune de Mehdia, réputé pour son café et ses petits-déjeuners face à l'Atlantique.",
+      en: "Overlooking the Mehdia lagoon, known for its coffee and Atlantic-view breakfasts.",
+      ar: "يطل على بحيرة مهدية، معروف بقهوته وفطوره بإطلالة على المحيط الأطلسي.",
+    },
     color: "#2F6FB0",
     icon: "wave",
     cover: "/restaurants/continental/cover.jpg",
@@ -42,6 +82,11 @@ export const restaurants = [
   {
     key: "miniworld",
     name: "Minu World",
+    desc: {
+      fr: "Une adresse conviviale au centre de Kénitra pour savourer des burgers, des snacks et des repas généreux.",
+      en: "A friendly spot in central Kenitra for burgers, snacks, and generous meals.",
+      ar: "مكان ودود في وسط القنيطرة للاستمتاع بالبرغر والوجبات الخفيفة والأطباق السخية.",
+    },
     color: "#F2A93B",
     icon: "burger",
     cover: "/restaurants/miniworld/cover.jpg",
@@ -80,6 +125,11 @@ export const restaurants = [
   {
     key: "littlemamma",
     name: "Little Mamma",
+    desc: {
+      fr: "Pizzeria conviviale et généreuse, un classique pour un déjeuner simple et savoureux.",
+      en: "Friendly, generous pizzeria, a local classic for a simple and tasty lunch.",
+      ar: "مطعم بيتزا ودود وسخي، خيار كلاسيكي لغداء بسيط ولذيذ.",
+    },
     color: "#5C9C4B",
     icon: "pizza",
     cover: "/restaurants/littlemamma/cover.jpg",
@@ -121,6 +171,11 @@ export const restaurants = [
   {
     key: "minichicken",
     name: "Mini Chicken",
+    desc: {
+      fr: "Une adresse décontractée spécialisée dans le poulet croustillant et les repas généreux à partager.",
+      en: "A relaxed spot specialising in crispy chicken and generous meals made for sharing.",
+      ar: "مكان مريح متخصص في الدجاج المقرمش والوجبات السخية المناسبة للمشاركة.",
+    },
     color: "#F59E0B",
     icon: "chicken",
     cover: "/restaurants/minichicken/cover.jpg",
@@ -140,6 +195,7 @@ export const restaurants = [
     price: "50 DH",
     order: "Mini Chicken",
   },
+
 
   
 ];
