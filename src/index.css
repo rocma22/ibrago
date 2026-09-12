@@ -536,7 +536,7 @@
     margin-top:-30px; margin-bottom:36px;
   }
   .restaurant-list{
-    max-width:1180px; margin:0 auto; display:flex; gap:18px; overflow-x:auto; padding:4px 4px 18px;
+    max-width:1180px; margin:0 auto; display:flex; gap:18px; overflow-x:auto; overflow-y:hidden; padding:4px 4px 18px;
     scroll-snap-type:x mandatory; scrollbar-width:thin; scrollbar-color:var(--gold) transparent;
   }
   .restaurant-card{
@@ -598,6 +598,7 @@
   .restaurant-rail-hint{display:flex; justify-content:flex-end; align-items:center; gap:10px; color:var(--mist); font-size:.78rem; margin-top:4px;}
   .restaurant-rail-hint span:last-child{font-size:1.35rem; color:var(--gold);}
   @media (max-width:640px){
+    .restaurant-list{overflow-x:auto; overflow-y:clip; touch-action:pan-x; overscroll-behavior-x:contain;}
     .restaurant-card{flex-basis:calc(100vw - 56px);}
     .restaurant-content{padding:18px 20px 20px;}
   }
