@@ -538,8 +538,9 @@
   }
   .restaurant-list{
     max-width:1180px; margin:0 auto; display:flex; gap:18px; overflow-x:auto; overflow-y:hidden; padding:4px 4px 18px;
-    scroll-snap-type:x mandatory; scrollbar-width:thin; scrollbar-color:var(--gold) transparent;
+    scroll-snap-type:x mandatory; scrollbar-width:thin; scrollbar-color:var(--gold) transparent; cursor:grab; touch-action:pan-x;
   }
+  .restaurant-list.is-dragging{cursor:grabbing; scroll-snap-type:none; user-select:none;}
   .restaurant-card{
     display:flex; flex-direction:column; flex:0 0 min(370px, calc(50vw - 30px)); scroll-snap-align:start;
     background:var(--purple-soft); border:1px solid var(--purple-line); border-radius:20px;
