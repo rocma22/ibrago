@@ -397,6 +397,7 @@
     .shopping-steps{gap:4px;}
     .shopping-step{padding-inline:6px;}
     .shopping-step strong{font-size:.78rem;}
+    .brands-copy > .btn-primary{display:block; width:max-content; margin-inline:auto;}
   }
 
   /* ===== E-COMMERCE SELLERS ===== */
