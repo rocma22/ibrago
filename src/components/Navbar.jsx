@@ -15,6 +15,7 @@ export default function Navbar({ menuOpen, setMenuOpen }) {
 
         <ul className="navlinks">
           <li><a href="/#services">{t('nav.services')}</a></li>
+          <li><a href="/#shopping">{t('nav.supermarkets')}</a></li>
           <li><a href="/#restaurants">{t('nav.restaurants')}</a></li>
           <li><a href="/#how">{t('nav.how')}</a></li>
           <li><a href="/#contact">{t('nav.contact')}</a></li>

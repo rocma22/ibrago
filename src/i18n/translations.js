@@ -2,7 +2,7 @@
 export const translations = {
     fr: {
       "meta.title":"IbraGo — Livraison rapide & fiable",
-      "nav.services":"Services","nav.restaurants":"Restaurants","nav.how":"Comment ça marche","nav.contact":"Contact",
+      "nav.services":"Services","nav.supermarkets":"Supermarchés","nav.restaurants":"Restaurants","nav.how":"Comment ça marche","nav.contact":"Contact",
       "nav.cta":"Commander sur WhatsApp",
       "hero.eyebrow":"Service actif 24h / 24",
       "hero.h1_line1":"Tout se livre.","hero.h1_line2":"Vite, et ","hero.h1_accent":"bien.",
@@ -50,14 +50,15 @@ export const translations = {
       "footer.services_heading":"Services","footer.company_heading":"Entreprise","footer.contact_heading":"Contact",
       "footer.location":"Kénitra, Maroc",
       "footer.copyright":"© 2026 IbraGo. Tous droits réservés.","footer.tagline2":"Livraison rapide & fiable, 24h/24.",
-      "aria.whatsapp":"Contacter sur WhatsApp","aria.menu_open":"Ouvrir le menu","aria.menu_close":"Fermer le menu",
+      "aria.whatsapp":"Contacter sur WhatsApp","aria.menu_open":"Ouvrir le menu","aria.menu_close":"Fermer le menu","aria.menu_photo_close":"Fermer la photo du menu",
       "aria.theme_light":"Basculer en mode clair","aria.theme_dark":"Basculer en mode sombre",
       "aria.lang_group":"Choisir la langue",
-      "rest.gallery_eyebrow":"L'ambiance du lieu","rest.gallery_title":"Un aperçu du restaurant","rest.menu_heading":"Découvrez la carte","rest.menu_order":"Commander sur WhatsApp"
+      "rest.gallery_eyebrow":"L'ambiance du lieu","rest.gallery_title":"Un aperçu du restaurant","rest.menu_heading":"Découvrez la carte","rest.menu_order":"Commander sur WhatsApp","rest.order_message":"Bonjour, je voudrais commander depuis",
+      "rest.bite win.tag":"Burgers • Sandwiches","rest.miniworld.tag":"Burgers • Snacks","rest.minichicken.tag":"Poulet croustillant"
     },
     en: {
       "meta.title":"IbraGo — Fast & Reliable Delivery",
-      "nav.services":"Services","nav.restaurants":"Restaurants","nav.how":"How it works","nav.contact":"Contact",
+      "nav.services":"Services","nav.supermarkets":"Supermarkets","nav.restaurants":"Restaurants","nav.how":"How it works","nav.contact":"Contact",
       "nav.cta":"Order on WhatsApp",
       "hero.eyebrow":"Active service, 24/7",
       "hero.h1_line1":"Everything gets delivered.","hero.h1_line2":"Fast, and ","hero.h1_accent":"reliable.",
@@ -105,14 +106,15 @@ export const translations = {
       "footer.services_heading":"Services","footer.company_heading":"Company","footer.contact_heading":"Contact",
       "footer.location":"Kénitra, Morocco",
       "footer.copyright":"© 2026 IbraGo. All rights reserved.","footer.tagline2":"Fast & reliable delivery, 24/7.",
-      "aria.whatsapp":"Contact on WhatsApp","aria.menu_open":"Open menu","aria.menu_close":"Close menu",
+      "aria.whatsapp":"Contact on WhatsApp","aria.menu_open":"Open menu","aria.menu_close":"Close menu","aria.menu_photo_close":"Close menu photo",
       "aria.theme_light":"Switch to light mode","aria.theme_dark":"Switch to dark mode",
       "aria.lang_group":"Choose language",
-      "rest.gallery_eyebrow":"Inside the place","rest.gallery_title":"A look around the restaurant","rest.menu_heading":"Explore the menu","rest.menu_order":"Order on WhatsApp"
+      "rest.gallery_eyebrow":"Inside the place","rest.gallery_title":"A look around the restaurant","rest.menu_heading":"Explore the menu","rest.menu_order":"Order on WhatsApp","rest.order_message":"Hello, I would like to order from",
+      "rest.winbite.tag":"Burgers • Sandwiches","rest.miniworld.tag":"Burgers • Snacks","rest.minichicken.tag":"Crispy chicken"
     },
     ar: {
       "meta.title":"إبراغو — توصيل سريع وموثوق",
-      "nav.services":"الخدمات","nav.restaurants":"المطاعم","nav.how":"كيف يعمل","nav.contact":"اتصل بنا",
+      "nav.services":"الخدمات","nav.supermarkets":"المتاجر الكبرى","nav.restaurants":"المطاعم","nav.how":"كيف يعمل","nav.contact":"اتصل بنا",
       "nav.cta":"اطلب عبر واتساب",
       "hero.eyebrow":"خدمة متوفرة على مدار الساعة",
       "hero.h1_line1":"كل شيء يُوصَّل.","hero.h1_line2":"بسرعة و","hero.h1_accent":"بأمان.",
@@ -160,9 +162,10 @@ export const translations = {
       "footer.services_heading":"الخدمات","footer.company_heading":"الشركة","footer.contact_heading":"تواصل",
       "footer.location":"كنيترة، المغرب",
       "footer.copyright":"© 2026 إبراغو. جميع الحقوق محفوظة.","footer.tagline2":"توصيل سريع وموثوق، على مدار الساعة.",
-      "aria.whatsapp":"تواصل عبر واتساب","aria.menu_open":"افتح القائمة","aria.menu_close":"أغلق القائمة",
+      "aria.whatsapp":"تواصل عبر واتساب","aria.menu_open":"افتح القائمة","aria.menu_close":"أغلق القائمة","aria.menu_photo_close":"إغلاق صورة القائمة",
       "aria.theme_light":"التبديل إلى الوضع الفاتح","aria.theme_dark":"التبديل إلى الوضع الداكن",
       "aria.lang_group":"اختر اللغة",
-      "rest.gallery_eyebrow":"أجواء المكان","rest.gallery_title":"نظرة على المطعم","rest.menu_heading":"اكتشف القائمة","rest.menu_order":"اطلب عبر واتساب"
+      "rest.gallery_eyebrow":"أجواء المكان","rest.gallery_title":"نظرة على المطعم","rest.menu_heading":"اكتشف القائمة","rest.menu_order":"اطلب عبر واتساب","rest.order_message":"مرحباً، أود الطلب من",
+      "rest.winbite.tag":"برغر • ساندويتشات","rest.miniworld.tag":"برغر • وجبات خفيفة","rest.minichicken.tag":"دجاج مقرمش"
     }
   };

@@ -32,7 +32,7 @@ export default function RestaurantDetails() {
   }
 
   const mapUrl = `https://www.google.com/maps/search/?api=1&query=${restaurant.coordinates}`
-  const orderUrl = `${WHATSAPP}?text=${encodeURIComponent(`Bonjour, je voudrais commander depuis ${restaurant.order}`)}`
+  const orderUrl = `${WHATSAPP}?text=${encodeURIComponent(`${t('rest.order_message')} ${restaurant.order}`)}`
   const gallery = restaurant.gallery.length ? restaurant.gallery : [restaurant.cover]
 
   return (
@@ -44,33 +44,6 @@ export default function RestaurantDetails() {
           <h1>{restaurant.name}</h1>
           <div className="detail-rating">{restaurant.rating} {t('rest.rating')}</div>
         </div>
-      </div>
-      <section className="detail-gallery-section">
-        <div className="detail-gallery-heading">
-          <span className="section-eyebrow">{t('rest.gallery_eyebrow')}</span>
-          <h2>{t('rest.gallery_title')}</h2>
-        </div>
-        <div className="detail-gallery" aria-label={t('rest.gallery_title')}>
-          {gallery.map((photo, index) => (
-            <img key={photo} className={index === 0 ? 'detail-gallery-feature' : ''} src={photo} alt={`${restaurant.name} ${index + 1}`} loading="lazy" />
-          ))}
-        </div>
-      </section>
-      <div className="detail-content">
-        <div className="detail-main">
-          <span className="restaurant-tag">{t(`rest.${restaurant.key}.tag`)}</span>
-          <h2>{t('rest.discover')} {restaurant.name}</h2>
-          <p className="detail-description">{restaurant.desc[lang] ?? restaurant.desc.fr}</p>
-          <div className="detail-actions">
-            <a className="btn btn-primary" href={orderUrl} target="_blank" rel="noopener noreferrer">{t('rest.order_btn')}</a>
-          </div>
-        </div>
-        <aside className="detail-facts">
-          <div><span>{t('rest.address')}</span><strong>{restaurant.address}</strong></div>
-          <div><span>{t('rest.hours')}</span><strong>{restaurant.hours}</strong></div>
-          <div><span>{t('rest.price_from')}</span><strong>{restaurant.price || t('rest.ask_price')}</strong></div>
-          <a className="detail-map" href={mapUrl} target="_blank" rel="noopener noreferrer"><span>⌖</span>{t('rest.see_gps')}</a>
-        </aside>
       </div>
       <section className="detail-menu">
         <div>
@@ -91,9 +64,36 @@ export default function RestaurantDetails() {
           ))}
         </div>
       </section>
+      <div className="detail-content">
+        <div className="detail-main">
+          <span className="restaurant-tag">{t(`rest.${restaurant.key}.tag`)}</span>
+          <h2>{t('rest.discover')} {restaurant.name}</h2>
+          <p className="detail-description">{restaurant.desc[lang] ?? restaurant.desc.fr}</p>
+          <div className="detail-actions">
+            <a className="btn btn-primary" href={orderUrl} target="_blank" rel="noopener noreferrer">{t('rest.order_btn')}</a>
+          </div>
+        </div>
+        <aside className="detail-facts">
+          <div><span>{t('rest.address')}</span><strong>{restaurant.address}</strong></div>
+          <div><span>{t('rest.hours')}</span><strong>{restaurant.hours}</strong></div>
+          <div><span>{t('rest.price_from')}</span><strong>{restaurant.price || t('rest.ask_price')}</strong></div>
+          <a className="detail-map" href={mapUrl} target="_blank" rel="noopener noreferrer"><span>⌖</span>{t('rest.see_gps')}</a>
+        </aside>
+      </div>
+      <section className="detail-gallery-section">
+        <div className="detail-gallery-heading">
+          <span className="section-eyebrow">{t('rest.gallery_eyebrow')}</span>
+          <h2>{t('rest.gallery_title')}</h2>
+        </div>
+        <div className="detail-gallery" aria-label={t('rest.gallery_title')}>
+          {gallery.map((photo, index) => (
+            <img key={photo} className={index === 0 ? 'detail-gallery-feature' : ''} src={photo} alt={`${restaurant.name} ${index + 1}`} loading="lazy" />
+          ))}
+        </div>
+      </section>
       {selectedMenuPhoto && createPortal(
         <div className="menu-lightbox" role="dialog" aria-modal="true" aria-label={t('rest.menu_title')} onClick={() => setSelectedMenuPhoto(null)}>
-          <button className="menu-lightbox-close" type="button" onClick={() => setSelectedMenuPhoto(null)} aria-label="Close menu photo">×</button>
+          <button className="menu-lightbox-close" type="button" onClick={() => setSelectedMenuPhoto(null)} aria-label={t('aria.menu_photo_close')}>×</button>
           <img src={selectedMenuPhoto} alt={t('rest.menu_title')} onClick={(event) => event.stopPropagation()} />
         </div>,
         document.body,

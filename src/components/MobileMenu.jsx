@@ -37,6 +37,7 @@ export default function MobileMenu({ menuOpen, setMenuOpen }) {
       <LanguageSwitch />
 
       <a href="/#services" onClick={close}>{t('nav.services')}</a>
+      <a href="/#shopping" onClick={close}>{t('nav.supermarkets')}</a>
       <a href="/#restaurants" onClick={close}>{t('nav.restaurants')}</a>
       <a href="/#how" onClick={close}>{t('nav.how')}</a>
       <a href="/#contact" onClick={close}>{t('nav.contact')}</a>
